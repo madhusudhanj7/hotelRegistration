@@ -1,6 +1,87 @@
-img{
+body{
+	font-family: Source Sans Pro;
+	border-style: solid;
+	border-width: 3px;
+	padding: 10px; 
+	background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUG9bRzCJzaW13bYRg1XCD42cQ4NCRieayzs2l7VOM1Kw-MZALLw");
+	outline-width: medium;
+	margin: 25px;
+	padding: 35px;
+	outline-offset: 1px;
+	text-align: justify;
+	background-size: cover;
+}
+h1{
+	height: 50px;
+	width: 100%;
+	background-color:white;
+	text-shadow: 2px 2px blue;
+	font-size: 30px;
+}
+p{
+	line-height: 0.5;
+	font-style: oblique;
+	font-size: 100%;
+}
+li{
+	list-style-type: square;
+}
+table{
+	border: 1px solid black;
+	width: 100%;
+	text-align: center;
+}
+th, td{
+	border: 1px solid black;
+	height: 50px;
+}
+.gallery{
 	float: left;
 	width: 30%;
-	padding: 10px;
+	padding: 5px;
 	margin: 5px;
+	transition: width 1s;
+	transform: scaleY(1);
 }
+.gallery:hover{
+	width:400px;
+}
+#special{
+	float: right;
+	height: 250px;
+	width: 350px;
+}
+footer{
+	background-color: gray;
+}
+ul{
+	float: auto;
+	width: 100%;
+}
+@media screen and (max-width: 700px){
+	#special{
+		float: right;
+		height: 125px;
+		width: 150px;
+	}
+	.gallery{
+		float: left;
+		width: 40%;
+		height: 60%;
+
+	}
+	.dashu{
+		font-size: 15px;
+		float: left;
+		width: 100%;
+	}
+	ul{
+		float: auto;
+		width:100%;
+	}
+	.jaf{
+		float:auto;
+		width:100%;
+	}
+
+} 
